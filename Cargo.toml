@@ -1,8 +1,14 @@
 [package]
 name = "bevy_dojo_starter"
-authors = ["Tony Stark <oktonystark8@gmail.com>"]
+authors = ["Your Name <your.email@example.com>"]
 version = "0.1.0"
 edition = "2024"
+description = "A Bevy + Dojo game template"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/bevy-dojo-template"  # Placeholder repo
+readme = "README.md"
+keywords = ["bevy", "dojo", "game", "template"]
+categories = ["games", "game-development"]
 
 [dependencies]
 bevy = { version = "0.16", features = ["wayland"] }
