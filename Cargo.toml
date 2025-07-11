@@ -24,6 +24,9 @@ tracing = { version = "0.1", features = [
     "release_max_level_warn",
 ] }
 dojo_bevy_plugin = { git = "https://github.com/dojoengine/dojo.bevy.git", branch = "main" }
+starknet = "0.13.0"
+torii-grpc-client = { git = "https://github.com/dojoengine/torii", rev = "ee8756a" }
+dojo-types = { git = "https://github.com/dojoengine/dojo", rev = "4145801" }
 
 # Your web builds will start failing if you add a dependency that pulls in `getrandom` v0.3+.
 # To fix this, you should tell `getrandom` to use the `wasm_js` backend on Wasm.
