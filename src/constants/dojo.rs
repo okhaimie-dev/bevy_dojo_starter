@@ -25,7 +25,7 @@ impl Default for DojoConfig {
                 .unwrap_or_else(|| {
                     // Real deployed world address from manifest_dev.json
                     Felt::from_hex_unchecked(
-                        "0x04d9778a74d2c9e6e7e4a24cbe913998a80de217c66ee173a604d06dea5469c3",
+                        "0x0393f8a2d0d47e384c3c61eedc08d2873f5d608f8da7ffb013e5d5aa327ac8f2",
                     )
                 }),
             action_address: env::var("ACTION_ADDRESS")
@@ -34,7 +34,7 @@ impl Default for DojoConfig {
                 .unwrap_or_else(|| {
                     // Real deployed action address from manifest_dev.json
                     Felt::from_hex_unchecked(
-                        "0x00b056c9813fdc442118bdfead6fda526e5daa5fd7d543304117ed80154ea752",
+                        "0x0173922b4b70c89732bcb6f3cf6598afb2020001e469b86fc76a4f2a60a139df",
                     )
                 }),
             use_dev_account: env::var("USE_DEV_ACCOUNT").unwrap_or_else(|_| "true".to_string())
