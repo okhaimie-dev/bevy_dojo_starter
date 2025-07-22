@@ -1,8 +1,14 @@
 [package]
 name = "bevy_dojo_starter"
-authors = ["Tony Stark <oktonystark8@gmail.com>"]
+authors = ["Your Name <your.email@example.com>"]
 version = "0.1.0"
 edition = "2024"
+description = "A Bevy + Dojo game template"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/bevy-dojo-template"  # Placeholder repo
+readme = "README.md"
+keywords = ["bevy", "dojo", "game", "template"]
+categories = ["games", "game-development"]
 
 [dependencies]
 bevy = { version = "0.16", features = ["wayland"] }
@@ -17,7 +23,10 @@ tracing = { version = "0.1", features = [
     "max_level_debug",
     "release_max_level_warn",
 ] }
-dojo_bevy_plugin = { git = "https://github.com/dojoengine/dojo.bevy.git", branch = "main" }
+dojo_bevy_plugin = { git = "https://github.com/dojoengine/dojo.bevy.git", rev = "dfae574" }
+starknet = "0.16.0"
+torii-grpc-client = { git = "https://github.com/dojoengine/torii", rev = "ee8756a" }
+dojo-types = { git = "https://github.com/dojoengine/dojo", rev = "4145801" }
 
 # Your web builds will start failing if you add a dependency that pulls in `getrandom` v0.3+.
 # To fix this, you should tell `getrandom` to use the `wasm_js` backend on Wasm.

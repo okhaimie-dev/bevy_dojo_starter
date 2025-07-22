@@ -5,6 +5,7 @@
 
 mod asset_tracking;
 mod audio;
+mod constants;
 mod demo;
 #[cfg(feature = "dev")]
 mod dev_tools;
@@ -13,6 +14,7 @@ mod screens;
 mod theme;
 
 use bevy::{asset::AssetMetaCheck, prelude::*};
+use dojo_bevy_plugin::{DojoPlugin, DojoResource, TokioRuntime};
 
 fn main() -> AppExit {
     App::new().add_plugins(AppPlugin).run()
@@ -42,6 +44,11 @@ impl Plugin for AppPlugin {
                     ..default()
                 }),
         );
+
+        // Dojo setup
+        app.init_resource::<DojoResource>();
+        app.init_resource::<TokioRuntime>();
+        app.add_plugins(DojoPlugin);
 
         // Add other plugins.
         app.add_plugins((
