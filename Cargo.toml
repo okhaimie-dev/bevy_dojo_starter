@@ -23,8 +23,8 @@ tracing = { version = "0.1", features = [
     "max_level_debug",
     "release_max_level_warn",
 ] }
-dojo_bevy_plugin = { git = "https://github.com/dojoengine/dojo.bevy.git", branch = "main" }
-starknet = "0.13.0"
+dojo_bevy_plugin = { git = "https://github.com/dojoengine/dojo.bevy.git", rev = "dfae574" }
+starknet = "0.16.0"
 torii-grpc-client = { git = "https://github.com/dojoengine/torii", rev = "ee8756a" }
 dojo-types = { git = "https://github.com/dojoengine/dojo", rev = "4145801" }
 
